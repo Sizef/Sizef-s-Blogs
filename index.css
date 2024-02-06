@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  border-bottom: 1px solid #dbc4c4;
+}
+.navbar h1 {
+  color: #2a9ed3;
+}
+.navbar div {
+  margin-left: 300px;
+  display: flex;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #2a9ed3;
+}
+.content {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog-preview / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #e4e4e4;
+} 
+.blog-preview:hover {
+  box-shadow: 5px 3px 5px rgba(85, 84, 84, 0.1);
+  border-bottom: 1px solid #dbc4c4;
+  cursor: pointer;
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #3e7d9b;
+  margin-bottom: 8px;
+}
+
+.blog-preview a {
+  text-decoration: none;
+}
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: #3e7d9b;
+  margin-bottom: 10px;
+}
+
+.blog-details p {
+  margin-bottom: 10px;
+}
+
+.blog-details div {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.blog-details button {
+  background: #46a4cf;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #3e7d9b;
+  margin-bottom: 30px;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.create input:focus,
+.create textarea:focus,
+.create select:focus {
+  outline: none;
+  border-color: #3498db; /* Change the border color on focus */
+}
+
+.create select {
+  appearance: none; /* Remove default styles for select dropdown arrow */
+  background: url('../public/down-arrow.png') no-repeat right center; /* Add custom dropdown arrow */
+  background-size: 20px; /* Set the size of the custom dropdown arrow */
+}
+
+
+/* Add more styles as needed */
+
+
+.create button {
+  background: #46a4cf;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 130px;
+}
